@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="혈당지수를 사용하여 혈당부하를 계산합시다. \n\n"
+            android:textColor="@color/black"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="환자 인슐린1단위당 떨어지는 혈당수치확인"></TextView>
+
+        <Button
+            android:id="@+id/Insullin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="insullin"
+            android:textSize="5pt"></Button>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="음식명: "></TextView>
+
+            <EditText
+                android:id="@+id/foodname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:width="30mm"
+                android:hint="음식이름(ex.떡볶이)"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1회 섭취분량에 탄수화물양: "/>
+            <EditText
+                android:layout_width="8mm"
+                android:layout_height="wrap_content"
+                android:id="@+id/tan"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="g"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="질량: "/>
+            <EditText
+                android:layout_width="10mm"
+                android:layout_height="wrap_content"
+                android:id="@+id/mess"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="g"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(100g당) GI: "></TextView>
+
+            <EditText
+                android:id="@+id/Gi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:width="12mm"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="확인"></Button>
+
+            <TextView
+                android:id="@+id/resultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textSize="12pt"></TextView>
+            <TextView
+                android:id="@+id/result1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15pt"></TextView>
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15pt"></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
